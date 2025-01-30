@@ -1,0 +1,22 @@
+article {
+    padding: 1rem;
+    background-color: #1e1e1e;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 30rem;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 3px 3px 6px -1px rgba(30, 30, 30, 0.7);
+    margin: 1rem;
+}
+
+.cardTitle {
+    font-size: 3.6rem;
+}
+
+p {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+

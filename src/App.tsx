@@ -3,34 +3,59 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import HeaderBanner from './components/header/HeaderBanner'
+import PokemonCard from './components/card/PokemonCard'
 
 function App() {
-  const [count, setCount] = useState(0)
+
   const titlePage = "Pokémon";
+
+  const pokemonCardArr = [
+    {
+      name: "Clefable ex",
+      hp: 260,
+      isRare: true
+    },
+    {
+      name: "Charmander",
+      hp: 60,
+      isRare: false
+    },
+    {
+      name: "Houndour",
+      hp: 50,
+      isRare: false
+    },
+    {
+      name: "Gengar ex",
+      hp: 310,
+      isRare: true
+    },
+    {
+      name: "Iron Crown ex",
+      hp: 220,
+      isRare: true
+    },
+    {
+      name: "Lapras",
+      hp: 110,
+      isRare: false
+    }
+  ]
 
   return (
     <>
-      <HeaderBanner headerTitle={titlePage}/>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <HeaderBanner headerTitle={titlePage} />
+      <div className='card-wrap'>
+        {pokemonCardArr.map((card, index) => (
+          <PokemonCard
+            key={index}
+            name={card.name}
+            hp={card.hp}
+            isRare={card.isRare}
+          />
+        ))}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
     </>
   )
 }

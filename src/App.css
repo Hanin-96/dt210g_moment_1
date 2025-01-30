@@ -8,3 +8,16 @@ html {
   font-size: 62.5%;
 }
 
+.card-wrap {
+  display: flex;
+  gap: 2rem;
+  max-width: 100rem;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+
+
+
+
