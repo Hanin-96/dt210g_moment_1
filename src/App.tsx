@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import HeaderBanner from './components/header/HeaderBanner'
 import PokemonCard from './components/card/PokemonCard'
+import Footer from './components/footer/footer'
 
 function App() {
 
@@ -55,6 +56,7 @@ function App() {
           />
         ))}
       </div>
+      <Footer />
 
     </>
   )

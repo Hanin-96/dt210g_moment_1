@@ -8,10 +8,10 @@ interface PokemonCardProps {
 function PokemonCard({ name, hp, isRare }: PokemonCardProps) {
   return (
     <>
-      <article className={cardStyle.article}>
+      <article className={cardStyle.articleCard}>
         <h3 className={cardStyle.cardTitle}>{name}</h3>
-        <p className={cardStyle.p}>{hp} hp</p>
-        <p className={cardStyle.p}>{isRare === true ? `Kortet är "Rare"` : `Kortet är "Common"` }</p>
+        <p className={cardStyle.text}>{hp} hp</p>
+        <p className={cardStyle.text}>{isRare === true ? `Kortet är "Rare"` : `Kortet är "Common"` }</p>
       </article>
 
     </>
