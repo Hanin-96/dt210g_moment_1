@@ -2,12 +2,15 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import HeaderBanner from './components/header/HeaderBanner'
 
 function App() {
   const [count, setCount] = useState(0)
+  const titlePage = "Pokémon";
 
   return (
     <>
+      <HeaderBanner headerTitle={titlePage}/>
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
