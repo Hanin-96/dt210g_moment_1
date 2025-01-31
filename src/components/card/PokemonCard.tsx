@@ -6,12 +6,15 @@ interface PokemonCardProps {
   isRare: boolean
 }
 function PokemonCard({ name, hp, isRare }: PokemonCardProps) {
+  const rareCard: object = {
+    color: "yellow"
+  }
   return (
     <>
       <article className={cardStyle.articleCard}>
-        <h3 className={cardStyle.cardTitle}>{name}</h3>
+        <h3>{name}</h3>
         <p className={cardStyle.text}>{hp} hp</p>
-        <p className={cardStyle.text}>{isRare === true ? `Kortet är "Rare"` : `Kortet är "Common"` }</p>
+        <p className={cardStyle.text} style={isRare ? rareCard : {}}>{isRare === true ? `Kortet är "Rare"` : `Kortet är "Common"`}</p>
       </article>
 
     </>
