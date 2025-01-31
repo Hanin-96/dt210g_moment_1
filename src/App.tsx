@@ -1,10 +1,7 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import HeaderBanner from './components/header/HeaderBanner'
 import PokemonCard from './components/card/PokemonCard'
-import Footer from './components/footer/footer'
+import Footer from './components/footer/Footer'
 
 function App() {
 

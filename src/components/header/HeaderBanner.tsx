@@ -7,8 +7,8 @@ function HeaderBanner({ headerTitle }: { headerTitle: string }) {
     <>
       <header>
         <picture>
-          <source srcSet={`${headerBannerWebp}`} />
-          <img src={`${headerBannerWebp}`} alt="banner" />
+          <source srcSet={`${headerBannerWebp}`} type="image/webp" />
+          <img src={`${headerBannerjpg}`} alt="banner" />
         </picture>
         <h1 className={headerStyle.bannerTitle}>{headerTitle}</h1>
       </header>
