@@ -43,16 +43,18 @@ function App() {
   return (
     <>
       <HeaderBanner headerTitle={titlePage} />
-      <div className='card-wrap'>
-        {pokemonCardArr.map((card, index) => (
-          <PokemonCard
-            key={index}
-            name={card.name}
-            hp={card.hp}
-            isRare={card.isRare}
-          />
-        ))}
-      </div>
+      <main>
+        <div className='card-wrap'>
+          {pokemonCardArr.map((card, index) => (
+            <PokemonCard
+              key={index}
+              name={card.name}
+              hp={card.hp}
+              isRare={card.isRare}
+            />
+          ))}
+        </div>
+      </main>
       <Footer />
 
     </>
