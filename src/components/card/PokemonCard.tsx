@@ -14,7 +14,7 @@ function PokemonCard({ name, hp, isRare }: PokemonCardProps) {
       <article className={cardStyle.articleCard}>
         <h3>{name}</h3>
         <p className={cardStyle.text}>{hp} hp</p>
-        <p className={cardStyle.text} style={isRare ? rareCard : {}}>{isRare === true ? `Kortet är "Rare"` : `Kortet är "Common"`}</p>
+        <p className={cardStyle.text}>Kortet är <span style={isRare ? rareCard : {color :"lightGreen"}}>{isRare === true ?  "Rare" : "Common"}</span></p>
       </article>
 
     </>
